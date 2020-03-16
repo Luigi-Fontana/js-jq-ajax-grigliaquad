@@ -3,7 +3,7 @@ $(document).ready(function(){
     var template = Handlebars.compile(source); // lo do in pasto a handlebars
     for (var i = 0; i < 36; i++) { // ciclo per 36 volte
         $('#grid').append(template); // Lo appendo al contenitore grid
-    }
+    };
     $('.square').click(function(){
         var that = $(this); // Faccio la foto del quadrato cliccato
         $.ajax({
@@ -13,11 +13,9 @@ $(document).ready(function(){
                 var random = numero.response; // Faccio la foto del random generato API
                 that.text(random); // Mostro il numero random nel quadrato cliccato
                 if (random > 5) { // Se è maggiore di 5 diventa verde
-                    that.addClass('green');
-                    that.removeClass('orange');
+                    that.addClass('green').removeClass('orange');
                 } else { // Altrimenti diventa orange
-                    that.addClass('orange');
-                    that.removeClass('green');
+                    that.addClass('orange').removeClass('green');
                 }
             },
             error: function () {

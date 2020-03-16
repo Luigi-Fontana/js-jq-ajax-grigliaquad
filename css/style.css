@@ -32,6 +32,10 @@
     font-weight: bold;
 }
 
+.square:hover {
+    background-color: darkgrey;
+}
+
 .square.orange {
     background-color: orange;
 }
