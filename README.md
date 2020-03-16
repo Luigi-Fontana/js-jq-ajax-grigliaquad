@@ -1,1 +1,1 @@
-# js-jq-ajax-grigliaquad
+# 24° Esercizio Corso Boolean
