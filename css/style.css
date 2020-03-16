@@ -3,3 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.square.orange {
+    background-color: orange;
+}
+
+.square.green {
+    background-color: darkgreen;
+}
